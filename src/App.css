@@ -1,0 +1,181 @@
+.page {
+  height: auto;
+  background-image: linear-gradient(to bottom right, rgb(255,195,229,255), rgb(255,221,254,255));
+}
+
+.navbar {
+  width: 75%;
+  margin: 0 auto;
+  padding: 1em 0 1em 0;
+}
+
+.navbar h2, p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.content {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.cart-title {
+  padding: 2em 0 2em 0;
+}
+
+.cart {
+  padding: 0 2em 0 2em;
+  border-radius: .5em;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+}
+
+.cart-item {
+  border-top: 1px solid gainsboro;
+  display: flex;
+  padding: 2em;
+}
+
+.cart-item-thankyou {
+  border-top: 1px solid gainsboro;
+  display: flex;
+  padding: 1em;
+}
+
+.cart-item-img {
+  width: 15%;
+  align-self: center;
+  text-align: center;
+}
+
+.cart-item-img img {
+  max-width: 9em;
+}
+
+.cart-item-desc {
+  width: 70%;
+  margin-left: 4em;
+}
+
+.cart-item-desc h3, p, h2 {
+  margin-block-start: .2em;
+  margin-block-end: 0em;
+}
+
+.cart-item-desc-status-div .inline {
+  float: left;
+}
+
+.cart-item-desc-status-div .inline img {
+  width: .8em;
+  margin-right: .3em;
+}
+
+.cart-item-desc-status {
+  font-size: 13px;
+}
+.cart-item-desc-desc {
+  color: rgb(114, 114, 114);
+  font-size: 13px;
+  clear: both;
+}
+
+.cart-item-desc-price {
+  color: rgb(255, 0, 191);
+}
+
+.cart-item-check {
+  width: 15%;
+  align-self: center;
+  text-align: right;
+}
+
+/* customized checkbox */
+.container {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: rgb(255, 0, 191);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* customized checkbox */
+
+.cart-approve {
+  margin: 0 auto;
+  text-align: right;
+  padding: 2em 0;
+}
+
+.cart-approve-btn {
+  font-weight: bold;
+  font-size: 1em;
+  background-color: rgb(32, 241, 231);
+  color: white;
+  border: 1px solid rgb(32, 241, 231);
+  height: 4.5em;
+  width: 8.5em;
+  border-radius: .5em;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+}
+
+.cart-approve-btn:hover {
+  background-color: rgb(33, 228, 218);
+  border: 1px solid rgb(33, 228, 218);
+}
+
+.cart-sub-title {
+  padding: 1em 0 1em 0;
+}
